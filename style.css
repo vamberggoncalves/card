@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.imagem{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem>img{
+    height: 94%;
+    width: 94%;
+    object-fit: fill;
+    border-radius: 50%;
+    transition: 1s ease;
+}
+.imagem >img:hover{
+    transform: translate(0px) scale(1.2);
+    cursor: pointer;
+}
